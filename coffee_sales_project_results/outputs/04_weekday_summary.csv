@@ -1,0 +1,8 @@
+﻿Weekday,Weekdaysort,observed_days,mean_daily_observations,median_daily_observations,min_daily_observations,max_daily_observations,mean_daily_money,median_daily_money,min_daily_money,max_daily_money
+Mon,1,55,9.89,9.0,1,25,315.69,285.58,25.96,796.0
+Tue,2,55,10.4,10.0,1,24,330.33,333.1,32.82,661.76
+Wed,3,52,9.62,9.0,1,24,302.89,279.2,27.92,760.24
+Thu,4,54,9.44,9.0,1,21,297.99,277.74,23.02,726.46
+Fri,5,56,9.5,8.0,2,26,300.05,263.3,67.6,836.66
+Sat,6,55,8.55,8.0,1,22,267.88,246.88,37.72,579.94
+Sun,7,54,7.76,6.5,1,24,246.96,211.12,28.9,679.88
