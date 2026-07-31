@@ -1,0 +1,16 @@
+{
+  "name": "Coffee Sales",
+  "dataColors": [
+    "#5B8FF9",
+    "#61DDAA",
+    "#F6BD16",
+    "#7262FD",
+    "#78D3F8",
+    "#9661BC",
+    "#F6903D",
+    "#E8684A"
+  ],
+  "background": "#F5F7FB",
+  "foreground": "#172B4D",
+  "tableAccent": "#5B8FF9"
+}

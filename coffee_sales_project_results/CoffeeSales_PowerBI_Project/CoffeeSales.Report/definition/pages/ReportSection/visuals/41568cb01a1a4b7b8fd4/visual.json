@@ -1,0 +1,69 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "41568cb01a1a4b7b8fd4",
+  "position": {
+    "x": 640,
+    "y": 430,
+    "z": 7000,
+    "height": 270,
+    "width": 620,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Time_of_Day"
+                }
+              },
+              "queryRef": "FactSales.Time_of_Day",
+              "nativeQueryRef": "Time_of_Day"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Record Count"
+                }
+              },
+              "queryRef": "FactSales.Record Count",
+              "nativeQueryRef": "Record Count"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Total Money"
+                }
+              },
+              "queryRef": "FactSales.Total Money",
+              "nativeQueryRef": "Total Money"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "749d44a2e6444a5cac3f",
+  "position": {
+    "x": 20,
+    "y": 20,
+    "z": 1000,
+    "height": 120,
+    "width": 900,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Record Count"
+                }
+              },
+              "queryRef": "FactSales.Record Count",
+              "nativeQueryRef": "Record Count"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Total Money"
+                }
+              },
+              "queryRef": "FactSales.Total Money",
+              "nativeQueryRef": "Total Money"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Average Money"
+                }
+              },
+              "queryRef": "FactSales.Average Money",
+              "nativeQueryRef": "Average Money"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Drink Count"
+                }
+              },
+              "queryRef": "FactSales.Drink Count",
+              "nativeQueryRef": "Drink Count"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "0cd19fe885e242cbac44",
+  "position": {
+    "x": 20,
+    "y": 430,
+    "z": 6000,
+    "height": 270,
+    "width": 600,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "hour_of_day"
+                }
+              },
+              "queryRef": "FactSales.hour_of_day",
+              "nativeQueryRef": "hour_of_day"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Record Count"
+                }
+              },
+              "queryRef": "FactSales.Record Count",
+              "nativeQueryRef": "Record Count"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

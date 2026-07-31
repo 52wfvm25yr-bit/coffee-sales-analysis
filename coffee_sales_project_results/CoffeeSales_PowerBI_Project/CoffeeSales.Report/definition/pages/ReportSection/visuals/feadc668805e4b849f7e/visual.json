@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "feadc668805e4b849f7e",
+  "position": {
+    "x": 640,
+    "y": 160,
+    "z": 5000,
+    "height": 250,
+    "width": 620,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "coffee_name"
+                }
+              },
+              "queryRef": "FactSales.coffee_name",
+              "nativeQueryRef": "coffee_name"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Total Money"
+                }
+              },
+              "queryRef": "FactSales.Total Money",
+              "nativeQueryRef": "Total Money"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

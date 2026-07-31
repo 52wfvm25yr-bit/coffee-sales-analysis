@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "493ebd3678f64251ad30",
+  "position": {
+    "x": 940,
+    "y": 85,
+    "z": 3000,
+    "height": 55,
+    "width": 320,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Weekday"
+                }
+              },
+              "queryRef": "FactSales.Weekday",
+              "nativeQueryRef": "Weekday"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

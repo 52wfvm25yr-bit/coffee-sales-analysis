@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "37c829163fd1469085d4",
+  "position": {
+    "x": 20,
+    "y": 160,
+    "z": 4000,
+    "height": 250,
+    "width": 600,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "coffee_name"
+                }
+              },
+              "queryRef": "FactSales.coffee_name",
+              "nativeQueryRef": "coffee_name"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "Record Count"
+                }
+              },
+              "queryRef": "FactSales.Record Count",
+              "nativeQueryRef": "Record Count"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

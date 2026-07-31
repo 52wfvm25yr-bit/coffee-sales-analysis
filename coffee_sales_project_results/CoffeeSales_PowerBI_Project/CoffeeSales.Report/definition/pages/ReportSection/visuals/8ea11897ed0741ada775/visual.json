@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "8ea11897ed0741ada775",
+  "position": {
+    "x": 940,
+    "y": 20,
+    "z": 2000,
+    "height": 55,
+    "width": 320,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactSales"
+                    }
+                  },
+                  "Property": "coffee_name"
+                }
+              },
+              "queryRef": "FactSales.coffee_name",
+              "nativeQueryRef": "coffee_name"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
